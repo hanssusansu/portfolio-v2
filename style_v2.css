@@ -434,7 +434,8 @@ h2::after {
     }
 
     .company-logo {
-        margin-top: 1rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
     }
 }
 
@@ -630,6 +631,8 @@ h2::after {
         flex: auto;
         width: 100%;
         margin-bottom: 1rem;
+        margin-top: 3rem;
+        /* Add space between Text (About Me btn) and Image */
     }
 
     .image-wrapper {
@@ -974,5 +977,14 @@ p {
 
     .edu-text {
         text-align: center;
+    }
+
+    .edu-logo {
+        margin: 1rem auto 0 auto;
+    }
+
+    /* Fix Experience Grid Overflow */
+    #experience .content {
+        grid-template-columns: 1fr;
     }
 }
